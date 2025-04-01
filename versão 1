@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    cadeia nome=""
+    inteiro idade
+    inteiro opcao
+    enquanto
+    (verdadeiro){
+      escreva("\nMenu atendimento")
+      escreva("\n1.Cadastrar usuário\n")
+      escreva("2.Sair\n")
+      escreva("Escolha uma opção:")
+      leia(opcao)
+      se (opcao==1){
+        escreva("Digite o nome do usuário:")
+        leia(nome)
+        escreva("Digite a idade do usuário:")
+        leia(idade)
+        escreva("Usuário",nome," de idade",idade,"cadastrado com sucesso!\n")
+      }senao se(opcao==2){
+        escreva("Saindo do sistema...\n")
+        pare
+      }senao{
+        escreva("Opção inválida. Tente novamente.\n")
+      }
+    }
+  }
+}
