@@ -1,0 +1,42 @@
+programa {
+  funcao inicio() {
+    cadeia nome=""
+inteiro idade=0
+inteiro opcao
+
+faca
+    {
+  escreva("\n Menu Principal \n")
+  escreva("\n1.Iniciar cadastro\n")
+  escreva("\n2.Ver cadastro\n")
+  escreva("\n3.Finalizar Cadastro\n")
+  escreva("\n Escolha sua opção:")
+  leia(opcao)
+    escolha(opcao)
+  {
+    caso 1:
+    escreva("O nome do usuário")
+    leia(nome)
+    escreva("Sua idade")
+    leia(idade)
+    escreva("Cadastro concluido")
+    pare
+      caso 2:
+      se(nome=="" ou idade==0)
+     {
+      escreva("Cadastro não realizado")
+      }
+     senao{
+      escreva("Seu nome é \t" ,nome," e sua idade é \t",idade)
+     }
+    pare
+    caso 3:
+    escreva("Finalizando Programa")
+    pare
+    caso contrario:
+    escreva("Opção não existente")
+     }
+    }enquanto(opcao != 3)
+    
+  }
+}
